@@ -1,0 +1,56 @@
+body{
+  margin: 15px;
+
+  background-color: black;
+}
+
+
+div#aboutMe{
+  display: inline-block;
+
+  border-color: white;
+  border-width: 1px;
+  border-style: groove;
+
+  width: 181px;
+  height: 500px;
+
+  color: white;
+}
+
+
+div#center{
+  float: right;
+
+  margin-right: 50%;
+}
+
+
+img#myImg{
+  display: block;
+
+  margin: auto;
+
+  width: 150px;
+
+  border-color: black;
+  border-width: 1px;
+  border-style: groove;
+  border-radius: 150px;
+}
+
+
+div#logo{
+  text-align: center;
+}
+
+img#githubLogo{
+  width: 30px;
+  height: 30px;
+}
+
+
+img#blogLogo{
+  width: 30px;
+  height: 30px;
+}
