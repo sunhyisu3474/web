@@ -1,32 +1,47 @@
-body{
-  margin: 15px;
+html {
+  /* overflow-y: hidden; */
+}
 
-  background-color: black;
+html,
+body {
+  margin: 0;
+
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+
+  scroll-behavior: smooth;
 }
 
 
-div#aboutMe{
-  display: inline-block;
+div#skills {
+  position: absolute;
+
+  top: 50px;
+  left: 50px;
 
   border-color: white;
   border-width: 1px;
   border-style: groove;
 
-  width: 181px;
-  height: 500px;
+  width: 24vw;
+  height: 85vh;
 
   color: white;
 }
 
 
-div#center{
-  float: right;
+div#center {
+  position: absolute;
+  left: 50%;
+  top: 240px;
 
-  margin-right: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
-img#myImg{
+img#myImg {
   display: block;
 
   margin: auto;
@@ -40,17 +55,238 @@ img#myImg{
 }
 
 
-div#logo{
+div#logo {
   text-align: center;
 }
 
-img#githubLogo{
+img#githubLogo {
   width: 30px;
   height: 30px;
 }
 
 
-img#blogLogo{
+img#instagramLogo {
   width: 30px;
   height: 30px;
+}
+
+
+img#blogLogo {
+  width: 30px;
+  height: 30px;
+}
+
+
+img.logo {
+  border-radius: 15%;
+  border-color: white;
+  border-width: 1px;
+  border-style: groove;
+
+  padding: 15px;
+}
+
+
+p#title {
+  text-align: center;
+
+  font-size: larger;
+  font-weight: 500;
+
+  color: coral;
+}
+
+div#word1 {
+  font-size: xx-large;
+  font-weight: bolder;
+  font-style: oblique;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  text-align: center;
+}
+
+
+span#word2 {
+  font-size: 24px;
+  font-weight: 850;
+}
+
+
+img.skills-logo {
+  width: 85px;
+  height: 85px;
+}
+
+
+div#frontendLogo,
+div#backendLogo,
+div#frameworkLogo {
+  text-align: center;
+}
+
+
+div#info {
+  position: absolute;
+  left: 30%;
+  bottom: 13.24%;
+
+  width: 60vw;
+  height: 40vh;
+
+  border-color: white;
+  border-width: 1px;
+  border-style: groove;
+
+  color: white;
+
+  padding: 15px;
+}
+
+
+p#infoTitle {
+  font-size: 24px;
+
+  text-decoration: overline;
+}
+
+
+p#infoMain {
+  font-size: 15px;
+}
+
+
+span#myName {
+  color: white;
+
+  font-size: 15px;
+}
+
+
+div.section {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  transition-delay: 20s;
+}
+
+
+div#secondPage {
+  background-color: wheat;
+}
+
+
+div#thirdPage {
+  background-color: black;
+}
+
+
+div#secondPageMain {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+
+  text-align: center;
+
+  animation-name: firstPage;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+div#firstPage {
+  height: 100%;
+  background-color: darkgrey;
+}
+
+#header {}
+
+
+div#loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+
+  font-size: 150px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+}
+
+
+.word {
+  animation-name: firstPage;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+span#wordL {
+  animation-delay: .2s;
+}
+
+span#wordO {
+  animation-delay: .3s;
+}
+
+span#wordA {
+  animation-delay: .4s;
+}
+
+span#wordD {
+  animation-delay: .5s;
+}
+
+span#wordI {
+  animation-delay: .6s;
+}
+
+span#wordN {
+  animation-delay: .7s;
+}
+
+span#wordG {
+  animation-delay: .8s;
+}
+
+
+@keyframes firstPage {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+
+img#scrollDown {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 85px;
+  height: 85px;
+
+  border-radius: 15%;
+  border-color: brown;
+  border-width: 1px;
+  border-style: groove;
+}
+
+
+.nav-link {
+  cursor: pointer;
 }
