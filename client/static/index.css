@@ -18,7 +18,7 @@ body {
 div#skills {
   position: absolute;
 
-  top: 50px;
+  top: 150px;
   left: 50px;
 
   border-color: white;
@@ -26,7 +26,7 @@ div#skills {
   border-style: groove;
 
   width: 24vw;
-  height: 85vh;
+  height: 79.5vh;
 
   color: white;
 }
@@ -35,7 +35,7 @@ div#skills {
 div#center {
   position: absolute;
   left: 50%;
-  top: 240px;
+  top: 24%;
 
   transform: translate(-50%, -50%);
 }
@@ -128,7 +128,7 @@ div#frameworkLogo {
 div#info {
   position: absolute;
   left: 30%;
-  bottom: 13.24%;
+  bottom: 9.2%;
 
   width: 60vw;
   height: 40vh;
@@ -139,12 +139,12 @@ div#info {
 
   color: white;
 
-  padding: 15px;
+  padding: 2.4%;
 }
 
 
 p#infoTitle {
-  font-size: 24px;
+  font-size: 30px;
 
   text-decoration: overline;
 }
@@ -172,17 +172,17 @@ div.section {
 }
 
 
-div#secondPage {
+div#thirdPage {
   background-color: wheat;
 }
 
 
-div#thirdPage {
+div#secondPage {
   background-color: black;
 }
 
 
-div#secondPageMain {
+div#thirdPageMain {
   position: absolute;
   left: 50%;
   top: 15%;
@@ -204,12 +204,14 @@ div#secondPageMain {
 div#firstPage {
   height: 100%;
   background-color: darkgrey;
+
+  background: url(../static/img/back.jpg);
+  background-size: cover;
+  opacity: 85%;
 }
 
-#header {}
 
-
-div#loading {
+div#portfolio {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -223,51 +225,31 @@ div#loading {
 }
 
 
-.word {
-  animation-name: firstPage;
+span.word {
+  animation-name: portfolio;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
 
-span#wordL {
-  animation-delay: .2s;
-}
-
-span#wordO {
-  animation-delay: .3s;
-}
-
-span#wordA {
-  animation-delay: .4s;
-}
-
-span#wordD {
-  animation-delay: .5s;
-}
-
-span#wordI {
-  animation-delay: .6s;
-}
-
-span#wordN {
-  animation-delay: .7s;
-}
-
-span#wordG {
-  animation-delay: .8s;
-}
-
-
-@keyframes firstPage {
+@keyframes portfolio {
   from {
     opacity: 1;
   }
 
   to {
-    opacity: 0;
+    opacity: 0.2;
   }
+}
+
+
+div#firstPageScroll {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
 }
 
 

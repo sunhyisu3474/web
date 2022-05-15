@@ -27,11 +27,6 @@ function moveAbout() {
 }
 
 
-function moveSkills() {
-  thirdPage.scrollIntoView();
-}
-
-
 function moveProject() {
-  fourthPage.scrollIntoView();
+  thirdPage.scrollIntoView();
 }
